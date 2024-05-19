@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $teams = [
+        'naples'=> 'Napoli',
+        'inter'=> 'Inter',
+        'milan'=> 'Milan',
+        'real'=> 'Real Madrid'
+        
+    ];
+    return view('homepage', $teams);
 });
