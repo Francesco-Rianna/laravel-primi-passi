@@ -14,10 +14,11 @@
 
     <div>
         <ul>
-            <li> {{$naples}}</li>
-            <li> {{$inter}}</li>
-            <li> {{$milan}}</li>
-            <li> {{$real}}</li>
+            @foreach ($bestTeams as $team)
+            <li> {{$team}}</li>
+                
+            @endforeach
+            
         </ul>
     </div>
 </body>
